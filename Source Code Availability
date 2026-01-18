@@ -1,0 +1,16 @@
+## 🔒 Source Code Availability (Lưu ý về Mã nguồn)
+
+This repository serves as a **Portfolio Showcase** to demonstrate the architecture and logic of my Morphing Beam Optimization algorithm.
+
+### What is included:
+* **Main_Optimization.m:** The central control script showing how the Genetic Algorithm (GA) is configured, including parameter setup, constraints handling, and the logic for selecting the "Four Great Beams" scenarios.
+* **Results/:** Full output logs and 3D visualizations proving the algorithm's effectiveness.
+
+### What is withheld:
+* **Core Mathematical Kernels:** The specific helper functions (e.g., `generate_morph_section.m`, `calc_normal_stress.m`, `ObjectiveFunction.m`) contain proprietary algorithms and optimized formulas developed during my research. These are withheld to protect **Intellectual Property (IP)**.
+
+ℹ️ *Note: The code provided is for structural review purposes. It will not execute without the proprietary kernels. For detailed inquiries or collaboration, please contact me directly.*
+
+---
+**(Tiếng Việt)**
+Kho lưu trữ này đóng vai trò là hồ sơ năng lực nhằm minh họa cấu trúc thuật toán Tối ưu hóa Dầm. File `Main_Optimization.m` được chia sẻ để người xem hiểu luồng tư duy và cách thiết lập bài toán. Tuy nhiên, các hàm tính toán lõi (Core Functions) được giữ kín để bảo mật chất xám nghiên cứu. Vui lòng xem thư mục `Results/` để kiểm chứng kết quả thực tế.
