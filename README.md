@@ -23,25 +23,25 @@ The algorithm was tested on 4 distinct scenarios, successfully rediscovering cla
 * **Scenario:** High Bending Moment ($M_x$), Zero Torsion.
 * **AI Solution:** A slender **I-Beam** with thin webs.
 * **Why:** This is the most efficient shape for bending. The AI automatically closed the web gap to zero.
-![Case 1](Results/Case1_EconomyI.png)
+![Case 1](Result/I_Beam.jpg)
 
 ### 2. The Constrained H-Beam (Height Limited)
 * **Scenario:** Height restricted ($h < 500mm$), Heavy Shear.
 * **AI Solution:** A squat, wide **H-Beam**.
 * **Why:** Since it couldn't grow vertically, the AI expanded horizontally to maintain Moment of Inertia ($I_x$).
-![Case 2](Results/Case2_HBeam.png)
+![Case 2](Result/H_Beam.jpg)
 
 ### 3. The Arup Box Girder (High Torsion)
 * **Scenario:** Extreme Torsion ($M_y$) + Bending.
 * **AI Solution:** A **Wide Box Girder** (Webs separated).
 * **Why:** Open sections (I-beams) fail under torsion. The algorithm's "Torsion Police" heuristic forced the webs apart to maximize the torsional constant ($J$).
-![Case 3](Results/Case3_Box.png)
+![Case 3](Result/Hybrid_Beam.jpg)
 
 ### 4. The Double-Web Transfer Beam (Extreme Shear)
 * **Scenario:** Massive Shear Force ($V = 3500 kN$).
 * **AI Solution:** A **Double-Web Composite Section** (closely packed webs).
 * **Why:** A single web would require impractical thickness. The AI used two moderately thick webs to distribute shear stress effectively.
-![Case 4](Results/Case4_DoubleWeb.png)
+![Case 4](Result/Composite_Beam.jpg)
 
 ---
 
