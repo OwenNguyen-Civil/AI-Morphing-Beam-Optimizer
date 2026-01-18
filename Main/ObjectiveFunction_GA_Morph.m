@@ -32,14 +32,14 @@ function Cost = ObjectiveFunction_GA_Morph(x, Input_P)
         if Delta > Input_P.L_mm/250, P_Deflection = (Delta/(Input_P.L_mm/250) - 1) * Weight; end
         
         Gap = x(5)*2;
-        if Gap > 1 && Gap < 150, P_Gap = 1e9; end % Vùng tử thần
-        if Gap > 0, P_Gap = P_Gap + Gap*50; end % Tiền hàn (nhẹ)
+        if Gap > 1 && Gap < 150, P_Gap = 1e9; end 
+        if Gap > 0, P_Gap = P_Gap + Gap*50; end 
         
 
 
-        if Input_P.My_Nmm > 500e6 % Ngưỡng Xoắn lớn (500 kNm)
+        if Input_P.My_Nmm > 500e6 
             if Gap < 150 
-                P_Torsion = 1e11; % Phạt cực nặng để ép nó tách bụng ra
+                P_Torsion = 1e11; 
             end
         end
         % ==============================================
@@ -51,3 +51,4 @@ function Cost = ObjectiveFunction_GA_Morph(x, Input_P)
     end
 
 end
+
