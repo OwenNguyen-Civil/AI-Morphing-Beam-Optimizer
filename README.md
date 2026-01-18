@@ -62,13 +62,4 @@ Where penalties include:
 
 ---
 
-## 🛠️ How to Run
-1.  Clone this repository.
-2.  Open `Main_Optimization.m` in MATLAB.
-3.  Select a scenario by changing the `CurrentCase` variable (1, 2, 3, or 4).
-4.  Run the script.
-5.  Enjoy the 3D visualization of the optimal beam!
-
----
-
 *Created by [Owen Nguyen] - 2026*
